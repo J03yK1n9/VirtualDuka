@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Chettan+2:600|Baloo+Da+2&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #e8e9ed;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 10%;
+}
+
+header .logo {
+  cursor: pointer;
+}
+
+header .logo #logo {
+  -webkit-animation: fill 1.5s ease forwards 3s;
+          animation: fill 1.5s ease forwards 3s;
+}
+
+header .logo #logo path:nth-child(1) {
+  stroke-dasharray: 174px;
+  stroke-dashoffset: 174px;
+  -webkit-animation: line-anime 4s ease forwards 0.6s;
+          animation: line-anime 4s ease forwards 0.6s;
+}
+
+header .logo #logo path:nth-child(2) {
+  stroke-dasharray: 75px;
+  stroke-dashoffset: 75px;
+  -webkit-animation: line-anime 2s ease forwards;
+          animation: line-anime 2s ease forwards;
+}
+
+header .logo #logo path:nth-child(3) {
+  stroke-dasharray: 88px;
+  stroke-dashoffset: 88px;
+  -webkit-animation: line-anime 2s ease forwards 0.3s;
+          animation: line-anime 2s ease forwards 0.3s;
+}
+
+header .logo #logo path:nth-child(4) {
+  stroke-dasharray: 110px;
+  stroke-dashoffset: 100px;
+  -webkit-animation: line-anime 3s ease forwards 0.6s;
+          animation: line-anime 3s ease forwards 0.6s;
+}
+
+header .logo #logo path:nth-child(5) {
+  stroke-dasharray: 77px;
+  stroke-dashoffset: 77px;
+  -webkit-animation: line-anime 3s ease forwards 0.9s;
+          animation: line-anime 3s ease forwards 0.9s;
+}
+
+@-webkit-keyframes line-anime {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line-anime {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #ff5900;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #ff5900;
+  }
+}
+
+header nav .nav_links {
+  list-style: none;
+}
+
+header nav .nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+header nav .nav_links li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header nav .nav_links li a:hover {
+  color: #ff5900;
+}
+
+header nav li,
+header nav a {
+  font-family: "Baloo Chettan 2", cursive;
+  font-weight: 600;
+  font-size: 22px;
+  color: #05205b;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

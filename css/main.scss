@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Chettan+2:600|Baloo+Da+2&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #e8e9ed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+
+  .logo {
+    cursor: pointer;
+
+    #logo {
+      animation: fill 1.5s ease forwards 3s;
+    }
+
+    #logo path:nth-child(1) {
+      stroke-dasharray: 174px;
+      stroke-dashoffset: 174px;
+      animation: line-anime 4s ease forwards 0.6s;
+      //   animation: fill2 1.5s ease forwards 3s;
+    }
+
+    #logo path:nth-child(2) {
+      stroke-dasharray: 75px;
+      stroke-dashoffset: 75px;
+      animation: line-anime 2s ease forwards;
+    }
+
+    #logo path:nth-child(3) {
+      stroke-dasharray: 88px;
+      stroke-dashoffset: 88px;
+      animation: line-anime 2s ease forwards 0.3s;
+    }
+
+    #logo path:nth-child(4) {
+      stroke-dasharray: 110px;
+      stroke-dashoffset: 100px;
+      animation: line-anime 3s ease forwards 0.6s;
+    }
+
+    #logo path:nth-child(5) {
+      stroke-dasharray: 77px;
+      stroke-dashoffset: 77px;
+      animation: line-anime 3s ease forwards 0.9s;
+    }
+
+    @keyframes line-anime {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fill {
+      from {
+        fill: transparent;
+      }
+
+      to {
+        fill: #ff5900;
+      }
+    }
+  }
+
+  nav {
+    .nav_links {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        padding: 0px 20px;
+      }
+
+      li a {
+        transition: all 0.3s ease 0s;
+      }
+
+      li a:hover {
+        color: #ff5900;
+      }
+    }
+
+    li,
+    a {
+      font-family: "Baloo Chettan 2", cursive;
+      font-weight: 600;
+      font-size: 22px;
+      color: #05205b;
+      text-decoration: none;
+    }
+  }
+}
